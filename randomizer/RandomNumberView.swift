@@ -16,7 +16,7 @@ struct RandomNumberView: View {
             Text(viewModel.title)
                 .font(.largeTitle)
             
-            Text("$\(viewModel.randomNumber)")
+            Text(viewModel.randomNumber, format: .currency(code: "DKK"))
                 .font(.title)
                 .contentTransition(.numericText(value: Double(viewModel.randomNumber)))
 
